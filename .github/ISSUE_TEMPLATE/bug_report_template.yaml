@@ -20,16 +20,12 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: os
+  - type: input
+    id: Android version
     attributes:
-      label: Operating System
-      description: Which OS are you on?
-      options:
-        - Windows
-        - macOS
-        - Linux
-        - Other
+      label: Android Version
+      description: Which Android version are you on?
+      placeholder: "e.g. 11"
     validations:
       required: true
 
@@ -67,7 +63,6 @@ body:
     attributes:
       label: Relevant Logs or Screenshots
       description: Paste any relevant logs here (optional).
-    # No `validations` block = optional
 
   - type: checkboxes
     id: checklist
@@ -76,7 +71,3 @@ body:
       options:
         - label: I have searched for existing issues
           required: true
-        - label: I have read the contributing guidelines
-          required: true
-        - label: I am willing to submit a PR to fix this
-          required: false
