@@ -21,7 +21,7 @@ body:
       required: true
 
   - type: input
-    id: Android version
+    id: androidversion
     attributes:
       label: Android Version
       description: Which Android version are you on?
