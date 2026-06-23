@@ -9,7 +9,7 @@ Current version: 0.14.0
 | Area | Feature | Status | Version |
 |---|---|---|---|
 | OpenID4VCI | Issue PID credentials in both mdoc and SD-JWT VC formats | ✅ | 0.14.0 |
-| OpenID4VCI | Issue EAA credentials, both wallet initiated and issuer initiated | ✅ | 0.14.0 |
+| OpenID4VCI | Issue EAA credentials, in both mdoc and SD-JWT VC formats, both wallet initiated and issuer initiated flows | ✅ | 0.14.0 |
 | OpenID4VCI | Resolve a credential_offer, both by value and by reference | ✅ | 0.14.0 |
 | OpenID4VCI | Secure issuance with PAR and DPoP | ✅ | 0.14.0 |
 | OpenID4VCI | Re issue credentials using stored refresh tokens | ✅ | 0.14.0 |
