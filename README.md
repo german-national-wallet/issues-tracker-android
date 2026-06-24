@@ -10,12 +10,13 @@ Current version: 0.14.0
 |---|---|---|---|
 | OpenID4VCI | Issue PID credentials in both mdoc and SD-JWT VC formats | ✅ | 0.14.0 |
 | OpenID4VCI | Issue EAA credentials, in both mdoc and SD-JWT VC formats, both wallet initiated and issuer initiated flows | ✅ | 0.14.0 |
-| OpenID4VCI | Resolve a credential_offer, both by value and by reference | ✅ | 0.14.0 |
-| OpenID4VCI | Secure issuance with PAR and DPoP | ✅ | 0.14.0 |
-| OpenID4VCI | Re issue credentials using stored refresh tokens | ✅ | 0.14.0 |
-| OpenID4VCI | Complete deferred credentials | ✅ | 0.14.0 |
+| OpenID4VCI | Resolve a Credential Offer, both by value and by reference | ✅ | 0.14.0 |
+| OpenID4VCI | Use PAR Endpoint for issuance | ✅ | 0.14.0 |
+| OpenID4VCI | Use DPoP to sender-constrain Access Tokens | ✅ | 0.14.0 |
+| OpenID4VCI | Re-issue credentials using refresh tokens | ✅ | 0.14.0 |
+| OpenID4VCI | Deferred Issuance | ✅ | 0.14.0 |
 | OpenID4VP | Present PID and EAA credentials to verifiers | ✅ | 0.14.0 |
-| OpenID4VP | Verify the verifier identity, supported client_id_schemes:<ul><li>x509_san_dns</li><li>x509_hash</li></ul> | ✅ | 0.14.0 |
+| OpenID4VP | Verify the verifier identity, supported client_id_schemes are <ul><li>x509_san_dns</li> and <li>x509_hash</li></ul> | ✅ | 0.14.0 |
 | OpenID4VP | Send encrypted presentation responses to verifiers | ✅ | 0.14.0 |
 
 ## Upcoming features
@@ -24,7 +25,9 @@ Current version: 0.14.0
 |---|---|---|
 | OpenID4VCI / OpenID4VP | Present a credential during issuance of another credential | June 2026 |
 | OpenID4VCI | Validate signed issuer metadata | August 2026 |
-| OpenID4VCI | Encrypt credential issuance requests | August 2026 |
+| OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | August 2026 |
+| OpenID4VCI | Encrypt credential issuance requests and responses | September 2026 |
+| OpenID4VP | Prevent overasking using RP Registration Certificates included in the presentation requests | Q3 2026 (Conditional to Reference Implementation's implementation) |
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | August 2026 |
 
 ## Changelog
