@@ -14,7 +14,6 @@ Current version: 0.14.0
 | OpenID4VCI | Use PAR Endpoint for issuance | ✅ | 0.14.0 |
 | OpenID4VCI | Use DPoP to sender-constrain Access Tokens | ✅ | 0.14.0 |
 | OpenID4VCI | Send Wallet Attestations | ✅ | 0.14.0 |
-| OpenID4VCI | Deferred Issuance | ✅ | 0.14.0 |
 | OpenID4VP | Present PID and EAA credentials to verifiers | ✅ | 0.14.0 |
 | OpenID4VP | Verify the verifier identity, supported client_id_schemes are <ul><li>x509_san_dns</li> and <li>x509_hash</li></ul> | ✅ | 0.14.0 |
 | OpenID4VP | Send encrypted presentation responses to verifiers | ✅ | 0.14.0 |
