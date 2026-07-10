@@ -10,24 +10,21 @@ fixes.
 
 ## What's New
 - **Present multiple credentials in one go.** A new flow lets you present several
-  credentials together, with the password entered once and applied to all of
-  them.
+  credentials together, in one presentation.
 - **Stacked credential cards on the dashboard.** Credentials now appear as a
   stack of cards showing the issuer's logo and title, so you can see what you
   hold at a glance.
 - **A clear "no document" screen** appears in the presentation flow when there's
   nothing to show, instead of a blank or confusing state.
 - **Credential background images** are now loaded from the issuer's branding and
-  cached on your device (limited to 10 MB so it doesn't eat up storage).
-- **Wallet endpoints moved** to a new, signed backend path, with the device
-  registered ahead of time with the validation service.
+  cached on your device (limited to 10 MB so it doesn't eat up storage). Note that this is not a final design and will be updated later.
+- **New Wallet Backend endpoints are used** following migration to a production infrastructure.
 - **Core engine upgraded** to a newer version, with tighter handling of the
   secure key service, one-time codes wired into key creation, and more robust
   parsing of key data.
 - **Clearer issuer and service-provider details screens**, and the dashboard now
   scrolls smoothly when several cards are stacked.
-- **Staging environment now points at the penetration-testing backend.**
-- **Personal ID key attestation** is now sent to the secure key service.
+- **key attestations** are now sent to the Credential Endpoint of a PID Provider. Key Attestations are not used for EAA issuance.
 - **All wallet data on the device is now stored encrypted** using SQLCipher.
 - **Forced app update.** If your installed version is below the required
   minimum, the app blocks use until you update, with a clear on-screen message.
@@ -35,23 +32,20 @@ fixes.
   easier to navigate and maintain.
 - **Automatic data wipe** if you remove your device's lock screen — the wallet
   clears itself to protect your credentials.
-- **Personal ID credentials are re-fetched** after you present them, so they
-  stay current.
+- **Credentials are refreshed** if the remaining Credential count is low after the presentation.
+   Note that this requires Credential Issuer to provide Refresh Token to the Wallet.
 
 ## Security & Privacy
 - **Certificate pinning** for the Personal ID issuer on the demo and
   pre-production servers, so the app only talks to the genuine issuer.
 - **The root certificate is now pinned** instead of the intermediate, for
   stronger identity assurance.
-- **PIN salt clearing** added (not yet wired into any flow — see Known Issues).
 - **Device validation renewal is now double-signed** with a freshly generated
   key each time.
 - **Google Play Integrity checks** can now be toggled via a build setting, and
   the integrity flag replaces the old simulator detection.
 - **Non-essential logging removed** from release builds, so no sensitive
   information leaks via logs.
-- **Key attestation attached to the Personal ID proof-of-possession step**,
-  strengthening the Personal ID request.
 - **Simplified wallet authentication tokens** — the app now uses the primary
   token and drops redundant defaults.
 - **The secure-key PIN session is cleared** as soon as you finish presenting a
@@ -60,21 +54,18 @@ fixes.
   encrypted request header.
 
 ## Fixes
-- **Credential request encryption** now uses the correct algorithm (previously
-  could fail).
 - **Invalid server responses** during device validation are now caught
   gracefully instead of crashing.
 - **Credential deletion** now targets the right item, and the Personal ID
   deletion confirmation works correctly.
 - **Content is no longer hidden** behind the navigation bar.
-- **Retry after two wrong PINs** during issuance is unblocked.
+- **Retry after two wrong wallet PINs** during issuance is unblocked.
 - **The presentation scope stays alive** during navigation so multi-credential
   handoff works end-to-end.
 - **Documents with no expiry date** are handled correctly (previously caused
   errors).
 - **Back navigation restored** on the credential image screen, with a visible
   back arrow.
-- **A flaky UI test** is now stable.
 - **Key leakage during device-validation renewal** prevented with proper
   cleanup.
 - **Development build telemetry URL** corrected.
@@ -95,8 +86,7 @@ fixes.
 - **Version code now appears** in build artifact filenames.
 
 ## Known Issues
-- **PIN salt clearing isn't used yet.** The feature was built but hasn't been
-  connected to any flow.
+- **PIN salt clearing isn't used yet.**
 - **First CAN entry from the PIN route still reports "PIN blocked".** The
   retry-after-two-wrong-PINs fix works, but the very first CAN entry path still
   misreports the state.
@@ -107,14 +97,8 @@ fixes.
   must run before the session closes, tying the two together.
 - **Older / partially-set-up wallets are tolerated, not migrated.** Users can
   still delete local Personal ID documents, but there's no migration path.
-- **Core and credential modules excluded from test coverage.** Mostly upstream
-  code; excluded for now pending a move to binary dependencies.
-- **Backend settings gap.** The backend needs two values that exist in the dev
-  config but not yet in staging/sandbox configs.
 - **Release builds are size-optimized but not obfuscated.** Obfuscation is
   intentionally disabled at this stage.
 - **Stacked cards needed an explicit height fix.** The card stack was measured
   as one card tall; the fix uses an explicit stack height rather than automatic
   measurement.
-- **Datev issuance and presentation don't work.** The app shows a generic
-  "something went wrong" during Datev issuance. Blocked pending a fix.
