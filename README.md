@@ -20,11 +20,6 @@ Current version: 0.25.13
 | OpenID4VP | Present multiple credentials together in one presentation | ✅ | 0.25.13 |
 | OpenID4VCI | Send Key Attestations to the Credential Endpoint of a PID Provider | ✅ | 0.25.13 |
 | OpenID4VCI | Re-issue credentials using refresh tokens | ✅ | 0.25.13 |
-| Security | All wallet data stored encrypted on device using SQLCipher | ✅ | 0.25.13 |
-| Security | Forced app update when installed version is below the required minimum | ✅ | 0.25.13 |
-| Security | Automatic data wipe when the device's lock screen is removed | ✅ | 0.25.13 |
-| Security | Certificate pinning for the Personal ID issuer on demo and pre-production servers | ✅ | 0.25.13 |
-| Security | Google Play Integrity checks, configurable via a build setting | ✅ | 0.25.13 |
 
 ## Upcoming features
 
@@ -50,8 +45,8 @@ Current version: 0.25.13
 - Forced app update: if the installed version is below the required minimum, the app blocks use until updated.
 - Automatic data wipe when the device's lock screen is removed.
 - Credentials are refreshed when the remaining count is low after presentation (requires the Credential Issuer to provide a Refresh Token).
-- Certificate pinning for the Personal ID issuer on demo and pre-production servers; root certificate pinned instead of the intermediate.
-- Device validation renewal is now double-signed with a freshly generated key each time.
+- Certificate pinning for the PID Provider on demo and pre-production servers; root certificate pinned instead of the intermediate.
+- MDVM renewal is now double-signed with a freshly generated key each time.
 - Non-essential logging removed from release builds.
 - Credential request encryption hardened, using a stronger algorithm and an encrypted request header.
 
