@@ -43,12 +43,10 @@ Current version: 0.29.0
 - Refreshed visual styling (buttons, colors, fonts, dashboard) aligned with the EUDI design language; new splash screen.
 - eID card reader: auto-reads a card already on the NFC sensor, silences the detection beep/vibration, and shows read progress.
 - Clearer errors when issuance is interrupted mid-authorization.
-- Fix: verifier requests now pick the right claim when several share the same displayed value.
-- Fix: missing documents raise a clear error during presentation instead of silently failing.
-- Fix: mDL credentials issue correctly (DPoP config and date-only expiry parsing).
+- Fix: wallet returns correct claims as requested by the verifier. Previously, there was a bug when several claims shared the same displayed value.
+- Fix: DPoP config and date-only expiry parsing for EAA issuance.
 - Fix: single-use pre-authorized offers no longer fail with a 404.
 - Minimum Android version raised to 14 (API 34).
-- Nightly builds published to Google Play internal testing.
 
 ### v0.25.13
 

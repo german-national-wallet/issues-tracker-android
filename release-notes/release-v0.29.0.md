@@ -35,10 +35,10 @@ reader easier to use.
   of their displayed value.
 - **Missing documents raise a clear error** during presentation instead of
   silently failing.
-- **mDL credentials issue correctly.** Mobile driving Licence issuers no
+- **EAA credentials issue correctly.** EAA issuers no
   longer inherit settings meant for PID providers, and expiry dates in
   date-only format are handled alongside full ISO timestamps.
-- **Single-use pre-authorized offers no longer fail.** The app no longer
+- **Single-use pre-authorized Credential offers no longer fail.** The app no longer
   re-fetches an offer that can only be used once, so issuance from a
   pre-authorized link works reliably.
 - **The card reader handles missing authentication results** gracefully
@@ -49,9 +49,6 @@ reader easier to use.
 ## Behind the Scenes (Build & Tooling)
 - **Minimum Android version raised to 14 (API 34)**, matching the latest
   architecture documentation; obsolete compatibility code was removed.
-- **Nightly builds are now published to Google Play internal testing**, and
-  the internal version code is bumped automatically each night.
-- **Platform-specific documentation moved into the platform repositories.**
 
 ## Known Issues
 - **PIN salt clearing isn't used yet.**
@@ -61,8 +58,6 @@ reader easier to use.
 - **Multi-credential presentation lifecycle is fragile.** The presentation
   session must stay alive across the request and loading screens; cleanup is
   now explicit but the design is held together with workarounds.
-- **Personal ID refresh depends on an open secure-key PIN session.** The
-  refresh must run before the session closes, tying the two together.
 - **Older / partially-set-up wallets are tolerated, not migrated.** Users
   can still delete local Personal ID documents, but there's no migration
   path.
