@@ -21,6 +21,7 @@ Current version: 0.29.0
 | OpenID4VCI / OpenID4VP | Present a credential during issuance of another credential | ✅ | 0.29.0 |
 | OpenID4VCI | Send Key Attestations to the Credential Endpoint of a PID Provider | ✅ | 0.25.13 |
 | OpenID4VCI | Re-issue credentials using refresh tokens | ✅ | 0.25.13 |
+| OpenID4VCI | Encrypt credential issuance request | ✅ | 0.25.13 |
 
 ## Upcoming features
 
@@ -30,7 +31,7 @@ Current version: 0.29.0
 | OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | August 2026 |
 | OpenID4VCI | Support non key-bound EAAs | September 2026 |
 | OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | September 2026 |
-| OpenID4VCI | Encrypt credential issuance requests and responses | September 2026 |
+| OpenID4VCI | Encrypt credential issuance responses | September 2026 |
 | OpenID4VP | Prevent overasking using RP Registration Certificates included in the presentation requests | Q3 2026 (Conditional to Reference Implementation's implementation) |
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | August 2026 |
 
@@ -52,8 +53,8 @@ Current version: 0.29.0
 ### v0.25.13
 
 - Present multiple credentials together in one presentation.
-- Stacked credential cards on the dashboard, with a clear "no document" screen during presentation.
-- Core engine upgraded, with tighter secure-key service handling and one-time codes wired into key creation.
+- Added stacked credential cards view on the dashboard, 
+- added a clear "no document" screen during presentation if requested credential is missing.
 - All wallet data on the device is now stored encrypted.
 - Forced app update: if the installed version is below the required minimum, the app blocks use until updated.
 - Automatic data wipe when the device's lock screen is removed.
