@@ -2,7 +2,7 @@
 
 A public repository for issues management and bug reporting for Germany's Android Wallet Application
 
-Current version: 0.25.13
+Current version: 0.29.0
 
 ## Supported features
 
@@ -18,6 +18,7 @@ Current version: 0.25.13
 | OpenID4VP | Verify the verifier identity, supported client_id_schemes are <ul><li>x509_san_dns</li> and <li>x509_hash</li></ul> | ✅ | 0.14.0 |
 | OpenID4VP | Send encrypted presentation responses to verifiers | ✅ | 0.14.0 |
 | OpenID4VP | Present multiple credentials together in one presentation | ✅ | 0.25.13 |
+| OpenID4VCI / OpenID4VP | Present a credential during issuance of another credential | ✅ | 0.29.0 |
 | OpenID4VCI | Send Key Attestations to the Credential Endpoint of a PID Provider | ✅ | 0.25.13 |
 | OpenID4VCI | Re-issue credentials using refresh tokens | ✅ | 0.25.13 |
 | OpenID4VCI | Encrypt credential issuance request | ✅ | 0.25.13 |
@@ -26,7 +27,6 @@ Current version: 0.25.13
 
 | Area | Feature | Expected |
 |---|---|---|
-| OpenID4VCI / OpenID4VP | Present a credential during issuance of another credential | Aug 2026 |
 | OpenID4VCI | Validate signed issuer metadata | August 2026 |
 | OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | August 2026 |
 | OpenID4VCI | Support non key-bound EAAs | September 2026 |
@@ -36,6 +36,17 @@ Current version: 0.25.13
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | August 2026 |
 
 ## Changelog
+
+### v0.29.0
+
+- Present a credential while another one is being issued, then resume issuance.
+- Refreshed visual styling (buttons, colors, fonts, dashboard) aligned with the EUDI design language; new splash screen.
+- eID card reader: auto-reads a card already on the NFC sensor, silences the detection beep/vibration, and shows read progress.
+- Clearer errors when issuance is interrupted mid-authorization.
+- Fix: wallet returns correct claims as requested by the verifier. Previously, there was a bug when several claims shared the same displayed value.
+- Fix: DPoP config and date-only expiry parsing for EAA issuance.
+- Fix: single-use pre-authorized offers no longer fail with a 404.
+- Minimum Android version raised to 14 (API 34).
 
 ### v0.25.13
 
