@@ -1,4 +1,4 @@
-### Release Notes - v0.38.0
+### Release Notes - v0.39.0
 
 Note: updating clears the app data on first start, so the wallet has to be set up again.
 
