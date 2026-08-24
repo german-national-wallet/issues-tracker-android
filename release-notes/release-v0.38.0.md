@@ -8,7 +8,7 @@ Features
 - Updated the PIN screen to the new design
 - Added push notification support
 - Added a step to turn NFC on when it is off during PID issuance
-- Improved NFC card reading: a card resting on the sensor is now read in every step, and the detection sound and vibration are back
+- Improved NFC card reading: reading a card resting on the sensor works reliably, and the detection sound and vibration are back
 - Added reusable templates for the content screens
 - Unified iOS and Android error handling, and network error dialogs now show a trace ID
 - Made the exported logs readable and complete for review, with network calls included and sensitive values redacted
