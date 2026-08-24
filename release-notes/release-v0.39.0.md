@@ -21,3 +21,6 @@ Fixes
 - A presentation request that arrived after a completed issuance returned to the wrong screen, leaving the next request nowhere to go
 - Transaction codes that were not 6 digits long could not be entered
 - The transaction code screen showed the wallet PIN button label
+
+Known issues
+- If test card is blocked or PUK is required, the app doesn't give user feedback
