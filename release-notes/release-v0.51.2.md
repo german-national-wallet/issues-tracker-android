@@ -18,7 +18,6 @@ Fixes
 - The wallet no longer opens links sent by other apps that it does not own
 - Screen readers now announce the card reader steps, the claims card and the toolbar actions correctly
 - Long credential names are no longer cut off on the credential card
-- Telemetry and network logs no longer carry secrets
 
 Known issues
 - PID credentials are displayed incorrectly or not at all (issue #18)
