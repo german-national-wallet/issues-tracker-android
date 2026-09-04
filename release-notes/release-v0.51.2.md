@@ -17,7 +17,6 @@ Fixes
 - Issuance and DPoP metadata are now encrypted on the device
 - Entered PINs can no longer be pasted in, captured in screenshots, or left behind in memory
 - The toolbar back and close buttons both announced as "Reject" to screen readers
-- The wallet no longer opens links sent by other apps that it does not own
 - Long credential names are no longer cut off on the credential card
 
 Known issues
