@@ -19,7 +19,6 @@ Fixes
 - The toolbar back and close buttons both announced as "Reject" to screen readers
 - The wallet no longer opens links sent by other apps that it does not own
 - Long credential names are no longer cut off on the credential card
-- Telemetry and network logs no longer carry secrets
 
 Known issues
 - PID credentials are displayed incorrectly or not at all (issue #18)
