@@ -15,7 +15,6 @@ Fixes
 - Re-issuing a credential from the same issuer now replaces the existing one instead of storing both
 - Issuance and DPoP metadata are now encrypted on the device
 - Entered PINs can no longer be pasted in, captured in screenshots, or left behind in memory
-- The wallet no longer opens links sent by other apps that it does not own
 - Screen readers now announce the card reader steps, the claims card and the toolbar actions correctly
 - Long credential names are no longer cut off on the credential card
 
