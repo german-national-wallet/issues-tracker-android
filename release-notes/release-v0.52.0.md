@@ -9,4 +9,4 @@ Fixes
 - Exported logs no longer include the contents of push messages
 
 Known issues
-- PID credentials are displayed incorrectly or not at all (issue #18)
+- PID credentials data is displayed incorrectly or not at all (issue #18)
