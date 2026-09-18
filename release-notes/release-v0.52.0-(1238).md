@@ -4,7 +4,6 @@ Features
 - Using final app name, app icon and splash logo
 - Added onboarding screens
 - Added bottom navigation bar, activities and settings screens
-- Updated the wallet core and OpenID4VCI libraries
 
 Fixes
 - A correct CAN was reported as wrong, then correct a tap later
