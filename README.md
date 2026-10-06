@@ -19,7 +19,6 @@ Current version: [v0.61.0 (1249)](/release-notes/release-v0.61.0-(1249).md)
 | OpenID4VCI | Re-issue credentials using refresh tokens | ✅ | 0.25.13 |
 | OpenID4VCI | Encrypt credential issuance request | ✅ | 0.25.13 |
 | OpenID4VCI | Validate signed issuer metadata | ✅ | 0.61.0 |
-| OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | ✅ | 0.61.0 |
 | OpenID4VP | Present PID and EAA credentials to verifiers | ✅ | 0.14.0 |
 | OpenID4VP | Verify the verifier identity, supported client_id_schemes are <ul><li>x509_san_dns</li> and <li>x509_hash</li></ul> | ✅ | 0.14.0 |
 | OpenID4VP | Send encrypted presentation responses to verifiers | ✅ | 0.14.0 |
@@ -33,4 +32,5 @@ Current version: [v0.61.0 (1249)](/release-notes/release-v0.61.0-(1249).md)
 | OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | October 2026 |
 | OpenID4VCI | Support non key-bound EAAs | October 2026 |
 | OpenID4VCI | Encrypt credential issuance responses | October 2026 |
+| OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | October 2026 |
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | October 2026 |
