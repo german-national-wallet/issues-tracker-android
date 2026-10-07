@@ -5,7 +5,6 @@ Features
 - Added the new PID credential card design on the dashboard, consent and wallet code screens
 - Enforced signed Issuer metadata, removed old trust anchors
 - Presentation requests are refused when the relying party is not registered to ask for the data
-- Presentation errors are now shown in designed dialogs, with a specific message for each
 - Improved UI on EAA issuance
 - Moved the EAA issuance consent in Authorization Code Flow after the browser session
 - Distinguish trust anchors per app environment
