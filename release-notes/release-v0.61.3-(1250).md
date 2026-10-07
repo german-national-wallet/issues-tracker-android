@@ -1,4 +1,4 @@
-### Release Notes - v0.61.0 (1249)
+### Release Notes - v0.61.3 (1250)
 
 Features
 - Built the settings screen, including the revocation code

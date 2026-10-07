@@ -2,7 +2,7 @@
 
 A public repository for issues management and bug reporting for Germany's Android Wallet Application
 
-Current version: [v0.61.0 (1249)](/release-notes/release-v0.61.0-(1249).md)
+Current version: [v0.61.3 (1250)](/release-notes/release-v0.61.3-(1250).md)
 
 ## Supported features
 
