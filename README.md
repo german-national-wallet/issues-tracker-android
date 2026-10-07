@@ -24,6 +24,7 @@ Current version: [v0.61.3 (1250)](/release-notes/release-v0.61.3-(1250).md)
 | OpenID4VP | Send encrypted presentation responses to verifiers | ✅ | 0.14.0 |
 | OpenID4VP | Present multiple credentials together in one presentation | ✅ | 0.25.13 |
 | OpenID4VP | Prevent overasking using RP Registration Certificates included in the presentation requests | ✅ | 0.61.0 |
+| OpenID4VCI | Encrypt credential issuance responses | ✅ | 0.61.0 |
 
 ## Upcoming features
 
@@ -31,6 +32,5 @@ Current version: [v0.61.3 (1250)](/release-notes/release-v0.61.3-(1250).md)
 |---|---|---|
 | OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | October 2026 |
 | OpenID4VCI | Support non key-bound EAAs | October 2026 |
-| OpenID4VCI | Encrypt credential issuance responses | October 2026 |
 | OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | after go-live |
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | after go-live |
