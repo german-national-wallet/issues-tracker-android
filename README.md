@@ -33,4 +33,4 @@ Current version: [v0.61.0 (1249)](/release-notes/release-v0.61.0-(1249).md)
 | OpenID4VCI | Support non key-bound EAAs | October 2026 |
 | OpenID4VCI | Encrypt credential issuance responses | October 2026 |
 | OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | after go-live |
-| OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | October 2026 |
+| OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | after go-live |
