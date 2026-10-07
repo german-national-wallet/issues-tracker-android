@@ -1,22 +1,23 @@
 ### Release Notes - v0.61.3 (1250)
 
 Features
-- Built the settings screen, including the revocation code
+- Added the settings screen, including the revocation code
 - Added the new PID credential card design on the dashboard, consent and wallet code screens
-- Issuer metadata must now be signed, and is checked against bundled trust anchors
+- Enforced signed Issuer metadata, removed old trust anchors
 - Presentation requests are refused when the relying party is not registered to ask for the data
 - Presentation errors are now shown in designed dialogs, with a specific message for each
-- Finished the EAA issuance and credential offer screens, and EAA consent now comes after the browser sign-in
-- Each app variant now bundles its own trust anchors
+- Improved UI on EAA issuance
+- Moved the EAA issuance consent in Authorization Code Flow after the browser session
+- Distinguish trust anchors per app environment
 - Updated the OpenID4VCI and RASP libraries
 
 Fixes
-- Unsatisfiable presentation or declining one now notifies the verifier
-- Added metadata-driven WIA decision for unknown EAA issuers
+- Presentation that are unsatisfiable or declined by the user redirect to the redirect_uri if provided by the Relying Party
+- Wallet Instance Attestation is send depending on the EAA Provider's metadata
 - Allow retrying after entering a wrong transaction code
 - No dialog appeared when the splash screen had no internet
-- Technical fields such as expiry_date were shown in the personal details
-- The consent headline showed the wrong number of claims
+- Technical fields such as expiry_date are removed from the Credential's details view
+- Fixed the wrong number of selectively-disclosed claims shown in the Presentation consent headline
 - SBOMs named the wrong supplier for packages that do not name one
 
 Known issues
