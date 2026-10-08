@@ -11,6 +11,7 @@ Features
 - Updated the OpenID4VCI and RASP libraries
 
 Fixes
+- re-allow developer options and ADB
 - Presentation that are unsatisfiable or declined by the user redirect to the redirect_uri if provided by the Relying Party
 - Wallet Instance Attestation is send depending on the EAA Provider's metadata
 - Allow retrying after entering a wrong transaction code
