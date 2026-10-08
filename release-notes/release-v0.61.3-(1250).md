@@ -1,10 +1,10 @@
 ### Release Notes - v0.61.3 (1250)
 
 Features
+- Enforced Access Certificates and signed Issuer metadata, removed old trust anchors
+- Enforced Registration Certificates, Presentation are refused when the query requests more than the Registration Certificate
 - Added the settings screen, including the revocation code
 - Added the new PID credential card design on the dashboard, consent and wallet code screens
-- Enforced signed Issuer metadata, removed old trust anchors
-- Presentation requests are refused when the relying party is not registered to ask for the data
 - Improved UI on EAA issuance
 - Moved the EAA issuance consent in Authorization Code Flow after the browser session
 - Distinguish trust anchors per app environment
