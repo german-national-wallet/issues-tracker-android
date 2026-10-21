@@ -9,11 +9,11 @@
 **Fixes**
 - A service rejection dialog is now displayed when the verifier rejects the response.
 - Dashboard no longer flashes its loader on return.
-- Purpose box title: [b7af33cec](https://github.com/german-national-wallet/android-wallet-app/commit/b7af33cec) (WD-4715)
+- The notice box on the presentation request screen now uses `pid_presentation_rp_info_label` as its title.
 - Show full-width scroll fades on setup and presentation screens.
 - Removed unneeded Android permissions.
 - Following the HAIP recommendation, every OpenID4VCI config now allows only ECDH-ES (P-256) as JWE alg and A256GCM/A128GCM as `enc`.
 - Explicit AES key size (256) and secure hardware required.
 
-Known issues
+**Known issues**
 - PID credentials are displayed incorrectly or not at all (issue #18)
