@@ -13,7 +13,7 @@
 - A service rejection dialog is now displayed when the verifier rejects the response.
 - Dashboard no longer flashes its loader on return.
 - The notice box on the presentation request screen now has a title.
-- Show full-width scroll fades on setup and presentation screens.
+- Enabled scroll fade on the setup and presentation screens.
 - Removed unneeded Android permissions.
 - Credential response encryption is limited to ECDH-ES on P-256 with AES-GCM, and RSA is switched off
 - Explicit AES key size (256) and secure hardware required.
