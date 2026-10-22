@@ -6,7 +6,7 @@
 - Added a new activity log with an overview and detail screen.
 - Improved app onboarding screens with new setup steps for privacy policy, notification consent, screen lock, and more general improvements.
 - General improvements to the PID issuance screens.
-- Re-issued sandbox trust anchors added.
+- Added updated trust anchors for Sandbox Registrar and EUDIhub
 - Trust anchors split into access and registration CAs, with CRLs checked with soft-fail.
 
 **Fixes**
