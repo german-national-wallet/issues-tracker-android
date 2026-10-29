@@ -62,6 +62,7 @@ body:
     id: logs
     attributes:
       label: Relevant Logs or Screenshots
+      placeholder: "DO NOT POST UNREDACTED LOGS HERE"
       description: Paste any relevant logs here (optional).
 
   - type: checkboxes
