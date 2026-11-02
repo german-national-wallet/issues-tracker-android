@@ -15,13 +15,11 @@
 - The wallet PIN success step is now shown only after issuance completes.
 - The personal data screen is now built from the issuer metadata.
 - Credential response encryption is now supported but no longer required. (Fixes issue #32)
-- Wallet instance attestation now comes from the wallet backend, with a local key check first.
+- Wallet instance attestation for EAA issuers is now provided.
 - Certificate revocation lists (CRLs) are now cached between validations.
 - Password managers are kept away from PIN entry.
 - App data is now excluded from cloud backup and device transfer.
 - Changed how the wallet PIN key is derived.
 - The setup illustration now keeps a 16:9 ratio.
 - The DPoP-Nonce is no longer required on the finish-authorization redirect.
-
-**Known issues**
-- PID credentials are displayed incorrectly or not at all (issue #18).
+- PID credentials are now displayed correctly (Fixes issue #18).
