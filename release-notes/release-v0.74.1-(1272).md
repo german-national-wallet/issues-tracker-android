@@ -1,7 +1,7 @@
 ### Release Notes - v0.74.1 (1272)
 
 **Features**
-- An expired Digital ID is now treated as missing, presentations are blocked without a valid one, and a single missing-credential screen is shown.
+- If a credential is expired, presentations for that credential are blocked, and a single missing-credential screen is shown.
 - Added a blocking screen for a locked Digital ID, and updated designs of the verification denied screens.
 - Added timeout and expired-session dialogs during PID issuance, and timeout and rate-limit dialogs on startup.
 - HTTP 408 and 429 responses now produce dedicated errors.
