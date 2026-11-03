@@ -31,6 +31,7 @@ Current version: [v0.74.1 (1272)](/release-notes/release-v0.74.1-(1272).md)
 
 | Area | Feature | Expected |
 |---|---|---|
+| OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | November 2026 |
 | OpenID4VCI | Support non key-bound EAAs | October 2026 |
 | OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | after go-live |
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | after go-live |
