@@ -2,7 +2,7 @@
 
 **Features**
 - If a credential is expired, presentations for that credential are blocked, and a single missing-credential screen is shown.
-- Added a blocking screen for a locked Digital ID, and updated designs of the verification denied screens.
+- Improved the UX after entering the Digital ID code too many times. The presentation request is declined and the user is prompted to re-add their ID.
 
 **Fixes**
 - Improved recovery when reading the eID card.
