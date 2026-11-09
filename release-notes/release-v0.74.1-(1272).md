@@ -17,5 +17,4 @@
 - App data is now excluded from cloud backup and device transfer.
 - Changed how the Digital ID Code key is derived.
 - The setup illustration now keeps a 16:9 ratio.
-- The DPoP-Nonce is no longer required on the finish-authorization redirect.
 - PID credentials are now displayed correctly (Fixes issue #18).
