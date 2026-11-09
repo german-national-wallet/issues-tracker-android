@@ -1,5 +1,5 @@
 ### Release Notes - v0.74.6 (1275)
 
 **Fixes**
-- Wallet instance attestation for EAA issuers is now provided.
+- Wallet Instance Attestation(WIA) is now provided in the EAA issuance.
 - The correct VCI_REDIRECT_URI is now used.
