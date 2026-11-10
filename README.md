@@ -2,7 +2,7 @@
 
 A public repository for issues management and bug reporting for Germany's Android Wallet Application
 
-Current version: [v0.66.4 (1251)](/release-notes/release-v0.66.4-(1251).md)
+Current version: [v0.74.6 (1275)](/release-notes/release-v0.74.6-(1275).md)
 
 ## Supported features
 
@@ -25,12 +25,13 @@ Current version: [v0.66.4 (1251)](/release-notes/release-v0.66.4-(1251).md)
 | OpenID4VP | Present multiple credentials together in one presentation | ✅ | 0.25.13 |
 | OpenID4VP | Prevent overasking using RP Registration Certificates included in the presentation requests | ✅ | 0.61.0 |
 | OpenID4VCI | Encrypt credential issuance responses | ✅ | 0.61.0 |
+| OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | ✅ | 0.66.4 |
 
 ## Upcoming features
 
 | Area | Feature | Expected |
 |---|---|---|
-| OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | October 2026 |
-| OpenID4VCI | Support non key-bound EAAs | October 2026 |
+| OpenID4VCI | Obtain information about the issuer using Issuers' Registration Certificates included in the issuer metadata | November 2026 |
+| OpenID4VCI | Support non key-bound EAAs | November 2026 |
 | OpenID4VCI | Send Key Attestations during Key-bound EAA Issuance | after go-live |
 | OpenID4VP | Present credentials through the browser or OS Digital Credentials API (only Android due to iOS lack of support) | after go-live |
